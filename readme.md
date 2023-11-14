@@ -539,7 +539,7 @@ Open the root layout page , `+layout.svelte`.
 
 3. Add links for login / logout to `+layout.svelte`
 
-   Add the following to the page. The `if` block shows login or logout depending on whether `session` exists.
+   Add the following to the navigation menu, in a new `<li></li>`. The `if` block shows login or logout depending on whether `session` exists.
 
    ```html
            <!-- use session state to show login or logout -->
