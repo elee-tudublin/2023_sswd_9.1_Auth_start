@@ -26,6 +26,9 @@
         <li class="nav-item">
             <a class="nav-link" href="/register">Register</a>
         </li>
+	<li class="nav-item">
+		<!-- Login / Logout goes here -->
+	</li>
     </ul>
 </nav>
 <style>
@@ -35,8 +38,6 @@
     .btn-color {
         color: yellow;
     }
-
-
 </style>
 
 <slot />
