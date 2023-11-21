@@ -229,7 +229,7 @@ Client-side and server-side authentication are supported by the Supabase Auth he
 
    The first step is to pass the `session` for the server-side to the client-side via the layout server script, `src/routes/+layout.server.js`. The `load()` function is used to get the session and return it (to the client page) - similiar to previous exaples.
 
-   Create `src/routes/+layout.server.js` and add the following code to the file
+   Open `src/routes/+layout.server.js` and confirm that it contains the following code (if not add it):
 
 ```javascript
 // get the session from server-side and return it to the client-side
@@ -242,7 +242,7 @@ export const load = async ({ locals: { getSession } }) => {
 
 2. Share the Supabase client and session via the layout.
 
-   Add the following code to `src/routes/+layout.js`. This is very similiar to the code in `hooks.server.js` but note the use of `createBrowserClient`:
+ Create the file `src/routes/+layout.js` and add the following code. This is very similiar to the code in `hooks.server.js` but note the use of `createBrowserClient`:
 
 ```javascript
 import { createBrowserClient } from '@supabase/ssr'
